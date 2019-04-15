@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: newuser
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+    generate-ddl: true
+
